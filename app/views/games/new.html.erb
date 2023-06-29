@@ -1,0 +1,23 @@
+<h1>New game</h1>
+
+<ul>
+  <% @letters.each do |letter| %>
+  <li><%= letter %></li>
+  <% end %>
+</ul>
+
+<!--action = page to which we will navigate when submit // method="post" to define http request-->
+<form action="/score" method="post" data-turbo="false">
+<!--to add hidden input field with authenticity_token ensuring POST request comes from your bsite and not another. -->
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <p>What is the longest word you can find?</p>
+  <div class="input-group mb-3" style="width: 400px">
+    <input type="text" name="???" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <!--"name"'s value is the key of "name" parameter => query=are+you+here%3F-->
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="submit">Play!</button>
+    </div>
+  </div>
+</form>
+
+<!-- <%= link_to "to score page", score_path, data: { turbo_method: "post" } %> -->

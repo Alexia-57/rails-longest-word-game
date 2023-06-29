@@ -13,3 +13,58 @@
  *= require_tree .
  *= require_self
  */
+
+
+/* COMMON SECTION */
+
+body {
+  background-color:#d1e0ee;
+  display: block;
+  margin: 8px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.card-white {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.127);
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* NEW SECTION */
+
+ul {
+  list-style: none;
+  text-transform: uppercase;
+  color:rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+li {
+  background-color: #5ea0f0;
+  width: 45px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* SCORE SECTION */
+
+.url {
+  font-style: italic;
+  text-align: right;
+}
